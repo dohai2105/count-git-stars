@@ -1,14 +1,8 @@
-# How it work
+# How to count stars for multiple GitHub repositories
 
-For example you have
+Suppose you have multiple local git repositories named git_project1, git_project2, git_project3, and you want to count the number of stars for each of them.
 
-git_project1
-
-git_project2
-
-git_project3
-
-// run following script to get star
+Here's what you can do:
 ```
 python3 countstar.py
 
