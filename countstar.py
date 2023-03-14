@@ -7,7 +7,8 @@ import requests
 cwd = os.getcwd()
 
 # Get list of all directories in the current directory
-dirs = [d for d in os.listdir(cwd) if os.path.isdir(os.path.join(cwd, d))]
+dirs = [d for d in os.listdir(cwd) if os.path.isdir(os.path.join(cwd, d)) and d != ".git"]
+
 
 
 # Function to count files in a folder
@@ -34,7 +35,9 @@ def get_star(api_url):
 for folder in dirs:
     git_url = get_git_url(folder)
     api_url=generate_git_api_url(git_url)
-    print(get_star(api_url))
+    stars = get_star(api_url)
+    print(f"{folder}: {stars} stars")
+
 
 
 
