@@ -3,7 +3,9 @@
 For example you have
 
 git_project1
+
 git_project2
+
 git_project3
 
 // run following script to get star
